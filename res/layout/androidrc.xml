@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/androidrc_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/optSensor"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:text="Movimiento con sensor" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/botonAdelante"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/botonarriba" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/botonIzquierda"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/botonizquierda" />
+
+            <ImageButton
+                android:id="@+id/botonStop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@android:drawable/btn_dialog" android:onClick="handleStop"/>
+
+            <ImageButton
+                android:id="@+id/botonDerecha"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/botonderecha" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/botonAtras"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/botonabajo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/textS1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:text="S1" />
+
+                <TextView
+                    android:id="@+id/textS2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:text="S2" />
+
+                <TextView
+                    android:id="@+id/textS3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.22"
+                    android:text="S3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/androidrc_status"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="top|center"
+                android:text="Log" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status:" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="          " />
+
+            <TextView
+                android:id="@+id/androidrc_estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESCONECTADO" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:onClick="handleConectar"
+                android:text="Conectar" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:onClick="handleDesconectar"
+                android:text="Desconectar" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Voz" android:onClick="handleVoz"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
